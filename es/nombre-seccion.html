@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html lang="">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <!-- Aqui ira la navbar -->
+
+        <!-- Aqui comienza la seccion -->
+        <div class="seccion container">
+            <h1>Nombre de la seccion</h1>
+
+            <!-- Índice -->
+            <div id="indice" class="seccion container mb-5">
+                <h2>Índice</h2>
+                <hr>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item"><a href="id-aqui">Seccion 1</a></li>
+                    <li class="list-group-item"><a href="id-aqui">Seccion 2</a></li>
+                    <li class="list-group-item"><a href="id-aqui">Seccion 3</a></li>
+                    <li class="list-group-item"><a href="id-aqui">Seccion 4</a></li>
+                    <li class="list-group-item"><a href="id-aqui">Seccion 5</a></li>
+                </ol>
+            </div>
+
+            <!-- Subseccion 1 -->
+            <h2 id="id-aqui">Esto es el titulo de la primera subseccion</h2>
+            <hr>
+            <p>Una seccion debe tener las clases 'seccion' y 'container'.</p>
+            <p>El primer punto de cada sercción sera el indice</p>
+            <p>Dentro de cada sección habrá "subsecciones", cada una de estas subsecciones tiene un título que se es escribira dentro de un 'h2'</p>
+            <p>Debajo de cada título habra una barra horizontal 'hr' que separará el contenido</p>
+
+            <!-- Subseccion 2 -->
+            <h2 id="id-aqui">Esto es el titulo de la segunda subseccion</h2>
+            <hr>
+            <p>Cada subseccion puede tener a su vez subtitulo, que se escribiran con un h3</p>
+
+            <!-- Subtitulo 1-->
+            <h3>Esto es un subtitulo</h3>
+            <p>Debajo de cada subtitulo NO HABRA barra horizontal</p>
+            <p>Tambien puedes añadir imagenes, estas deben tener la clase 'imagen'</p>
+            <img class="imagen m-3 mx-auto d-block img-thumbnail" src="../img/example.png"></img>
+
+            <!-- Subtitulo 2-->
+            <h3>Subtitulo 2 de la segunda subseccion</h3>
+            <p>Cuando algo este entre comillas simples ('') debeis rodearlo con las etiquetas "code" <code>como esto de aqui</code></p>
+
+            <!-- Subseccion 3 -->
+            <h2 id="id-aqui">Subseccion 3</h2>
+            <hr>
+            <p>A la hora de añadir listas desordenadas aseguraos de poner la clase 'lista-des;</p>
+            <ul class="lista-des">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <p>Y cuando querais crear listas con numeros usad la clase 'lista-ord'</p>
+            <ol class="lista-ord">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+        <!-- Aqui termina la seccion -->
+
+        <!-- Aqui ira el pie de pagina -->
+    </body>
+</html>
+

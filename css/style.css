@@ -12,7 +12,7 @@ img#logo
 }
 
 /* Section images */
-div.seccion>div>img
+img.imagen
 {
     width:50%;
 }
@@ -24,7 +24,6 @@ p>code
     color:black;
     border: 1px solid lightgray;
     border-radius: 2px;
-
 }
 
 /* Pie de pagina */
@@ -35,7 +34,6 @@ div.pie
     height:120px;
     width:100%;
 }
-
 div.pie > ul
 {
       list-style-type: none;
