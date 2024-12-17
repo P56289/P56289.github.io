@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html lang="">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <!-- Aqui ira la navbar -->
+
+        <!-- Aqui comienza la seccion -->
+        <div class="seccion container">
+            <h1> Enviar mensajes</h1>
+
+            <!-- Índice -->
+            <div id="indice" class="seccion container mb-5">
+                <h2>Índice</h2>
+                <hr>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item"><a href="#description">Descripción de la interfaz</a></li>
+                    <li class="list-group-item"><a href="#file">Selección de Archivo Adjunto</a></li>
+                    <li class="list-group-item"><a href="#mail">Envío de correo electrónico</a></li>
+                    <li class="list-group-item"><a href="#back">Botón "Volver"</a></li>
+                    <li class="list-group-item"><a href="#example">Ejemplo de uso </a></li>
+                    <li class="list-group-item"><a href="#solutions">Solución de problemas </a></li>
+                </ol>
+            </div>
+
+            <!-- Subseccion 1 -->
+            <h2 id="description">Descripción de la interfaz</h2>
+            <hr>
+            <p>La ventana de envío de mensajes incluye los siguientes elementos:</p>
+
+            <ol class="lista-ord">
+                <li> Campo <code>Destinatario</code>: Permite ingresar la dirección de correo electrónico del receptor.</li>
+                <li> Campo <code>Asunto</code>: Permite ingresar el asunto del mensaje.</li>
+                <li> Campo <code>Mensaje</code>: Área de texto donde se escribe el cuerpo del mensaje. </li>
+                <li> Selección de archivo adjunto: Permite adjuntar un archivo de hasta 10 MB. </li>
+                <li> Botón <code>Enviar</code>: Envía el correo electrónico. </li>
+                <li> Botón <code>Volver</code>: Regresa a la ventana principal del programa. </li>
+            </ol>   
+
+
+
+            <!-- Subseccion 2 -->
+
+            <h2 id="file">Selección de Archivo Adjunto</h2>
+            <hr>
+            <p>Para adjuntar un archivo:</p>
+
+            <ol class="lista-ord">
+                <li> Haz clic en el botón <code>Seleccionar</code> para abrir el explorador de archivos.</li>
+                <li> Selecciona el archivo que deseas adjuntar.</li>
+                <li> El nombre del archivo seleccionado aparecerá en el campo correspondiente. </li>
+                
+            </ol>
+
+            <p><span>Nota:</span> El tamaño del archivo adjunto no debe superar los <span>10 MB.</span></p>
+
+
+            <!-- Subseccion 3 -->
+            <h2 id="mail">Envío del correo electrónico</h2>
+            <hr>
+            <p>Para enviar un correo electrónico:</p>
+
+            <ol class="lista-ord">
+                <li> Ingresa la dirección de correo electrónico del destinatario en el campo <code>Destinatario</code>.</li>
+                <li> Ingresa el asunto del mensaje en el campo <code>Asunto</code></li>
+                <li> Escribe el mensaje en el área <code>Mensaje</code> </li>
+                <li> Si es necesario, adjunta un archivo haciendo clic en el botón <code>Seleccionar</code> </li>
+                <li> Haz clic en el botón <code>Enviar</code>. </li>
+                
+            </ol> 
+
+
+            <!-- Subseccion 4 -->
+            <h2 id="back">Botón volver</h2>
+            <hr>
+            <p>El botón <code>Volver</code> permite regresar a la ventana principal del programa</p>
+
+            <ol class="lista-ord">
+                <li> Al hacer clic en este botón, la ventana de envío de mensajes se cierra. </li>
+                <li> Automáticamente, se abre la ventana principal.</li>
+                
+            </ol> 
+
+
+            <!-- Subseccion 5 -->
+            <h2 id="example">Ejemplo de uso</h2>
+            <hr>
+            <p>A continuación, se describe un ejemplo típico de uso</p>
+
+            <ol class="lista-ord">
+                <li> Ingresa <code>usuario_destino@gmail.com</code> en el campo <code>Destinatario</code>. </li>
+                <li> Ingresa <code>Prueba de Mensaje</code> en el campo <code>Asunto</code>.</li>
+                <li> Escribe <code>Este es un mensaje de prueba</code> en el área <code>Mensaje</code>. </li>
+                <li> (Opcional) Adjunta un archivo pequeño haciendo clic en <code> Seleccionar</code>.</li>
+                <li> Haz clic en el botón <code> Enviar</code>. </li>
+                <li> Verifica el mensaje de confirmación: <code> Correo enviado con exito</code>.</li>
+                <li> Haz clic en el botón <code>Volver</code> para regresar a la ventana principal. </li>
+                
+                
+            </ol> 
+
+
+            <!-- Subseccion 6 -->
+            <h2 id="solutions">Solución de problemas</h2>
+            <hr>
+            <h3>Problemas comunes y sus soluciones</h3>
+
+            <ol class="lista-ord">
+                <li><span>Error: </span><code> Formato de correo incorrecto</code>.</li>
+                <p>Verifica que la dirección de correo electrónico ingresada sea válida.</p>
+                <li><span>Error: </span><code> El archivo adjunto supera los 10 MB</code>.</li>
+                <p>Selecciona un archivo de menor tamaño.</p>
+                <li><span>Error: </span><code> Error con el servidor SMTP</code>.</li>
+                <p>Asegúrate de que tu conexión a internet esté activa y que la cuenta utilizada tenga acceso SMTP habilitado.</p>
+                <li><span>Error inesperado:</span> Revisa los detalles del error y contacta al administrador del sistema si el problema persiste.</p>
+                
+            </ol> 
+
+        </div>
+        <!-- Aqui termina la seccion -->
+
+        <!-- Aqui ira el pie de pagina -->
+    </body>
+</html>
