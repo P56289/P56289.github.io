@@ -1,0 +1,42 @@
+/* Nav bar */
+div#espaciador
+{
+    height:70px;
+}
+
+/* Nav bar logo */
+
+img#logo
+{
+    width:50px;
+}
+
+/* Section images */
+div.seccion>div>img
+{
+    width:50%;
+}
+
+/* Code highlight*/
+p>code
+{
+    background:lightgray;
+    color:black;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+
+}
+
+/* Pie de pagina */
+div.pie
+{
+    font-size:13px;
+    background:lightgray;
+    height:120px;
+    width:100%;
+}
+
+div.pie > ul
+{
+      list-style-type: none;
+}
