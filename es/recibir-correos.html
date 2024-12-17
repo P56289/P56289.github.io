@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html lang="">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <!-- Aqui ira la navbar -->
+
+        <!-- Aqui comienza la seccion -->
+        <div class="seccion container">
+            <h1> Recepción de correos electrónicos</h1>
+
+            <!-- Índice -->
+            <div id="indice" class="seccion container mb-5">
+                <h2>Índice</h2>
+                <hr>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item"><a href="#description">Descripción de la interfaz</a></li>
+                    <li class="list-group-item"><a href="#main">Funcionalidad principal</a></li>
+                    <li class="list-group-item"><a href="#delete">Botón "Eliminar"</a></li>
+                    <li class="list-group-item"><a href="#back">Botón "Volver"</a></li>
+                    <li class="list-group-item"><a href="#example">Ejemplo de uso </a></li>
+                    <li class="list-group-item"><a href="#solutions">Solución de problemas </a></li>
+                </ol>
+            </div>
+
+            <!-- Subseccion 1 -->
+            <h2 id="description">Descripción de la interfaz</h2>
+            <hr>
+            <p>La ventana de recepción de correos está compuesta por las siguientes secciones:</p>
+
+            <ol class="lista-ord">
+                <li> <span>Encabezado:</span></li>
+                <ul>
+                    <li>Título que indica la funcionalidad actual: <code>Repción de mensajes</code>.</li>
+                </ul>
+                  
+                <li> <span>Lista de carpetas:</span></li>
+
+                <ul>
+                    <li>Permite seleccionar diferentes carpetas para filtrar los correos.</li>
+                    <li>Incluye un botón <code>Nueva carpeta</code> para agregar una carpeta personalizada</li>
+                </ul>
+
+                <li> <span>Lista de correos:</span> </li>
+
+                <ul>
+                    <li>Muestra los correos disponibles organizados en las siguientes columnas:</li>
+                    <ul>
+                        <li><span>Leido:</span>  Indica si el correo ha sido leído (casilla marcada).</li>
+                        <li><span>Remitente: </span> Dirección de correo del remitente.</li>
+                        <li><span>Asunto:</span> Título o asunto del correo. </li>
+                        <li><span>Fecha:</span> Fecha de recepción del correo.</li>
+                    </ul>
+                </ul>
+                
+                <li> <span>Botones de acción</span> </li>
+                    <ul> 
+                        <li><span>Eliminar:</span> Permite eliminar el correo seleccionado</li>
+                        <li><span>Volver:</span> Regresa al menu principal del sistema</li>
+                    </ul>
+            </ol>   
+
+            <!-- Subseccion 2 -->
+            <h2 id="main">Funcionalidad principal</h2>
+            <hr>
+            <h3>Visualización de correos</h3>
+            <ul class="lista-des">
+                <li>Los correos se muestran en una lista ordenada en la sección principal.</li>
+                <li>Cada correo incluye su estado de lectura, remitente, asunto y fecha de recepción.</li>
+            </ul>
+
+            <h3>Selección de Carpeta</h3>
+            <ul class="lista-des">
+                <li>Utiliza la sección de <code>Carpetas</code> para seleccionar la carpeta deseada mediante el menú desplegable.</li>
+            </ul>
+
+            <h3>Eliminar Correo</h3>
+            <ul class="lista-des">
+                <li>Selecciona un correo de la lista.</li>
+                <li>Haz clic en el botón <code>Eliminar</code> para borrar el mensaje seleccionado.</li>
+            </ul>
+
+            <h3>Volver al Menú Principal</h3>
+            <ul class="lista-des">
+                <li>Haz clic en el botón <code>Volver</code> para regresar a la ventana principal del sistema.</li>
+            </ul>
+
+            <!-- Subseccion 3 -->
+            <h2 id="delete">Botón Eliminar</h2>
+            <hr>
+            <p>El botón <code>Eliminar</code> permite borrar el correo seleccionado en la lista.</p>
+            <p><span>Pasos para utilizar este botón</span></p>
+
+            <ol class="lista-ord">
+                <li> Selecciona el correo que deseas eliminar.</li>
+                <li> Haz clic en el botón <code>Eliminar</code>.</li>
+                <li> En algunos casos, puede aparecer una ventana de confirmación para evitar eliminaciones accidentales.</li>
+            </ol> 
+            <p><span>Nota: </span>Asegurate de seleccionar un correo antes de intentar eliminarlo.</p>
+
+            <!-- Subseccion 4 -->
+            <h2 id="back">Botón Volver</h2>
+            <hr>
+            <p>El botón <code>Volver</code> permite regresar al menú principal del sistema</p>
+            <p><span>Al hacer clic en este botón:</span></p>
+            <ol class="lista-ord">
+                <li> Se cerrará la ventana actual de recepción de correos. </li>
+                <li> Se abrirá automáticamente la ventana principal.</li>
+            </ol> 
+
+            <!-- Subseccion 5 -->
+            <h2 id="example">Ejemplo de uso</h2>
+            <hr>
+            <p>Sigue estos pasos para un uso típico de la ventana de recepción de correos:</p>
+
+            <ol class="lista-ord">
+                <li> Abre la ventana de recepción de correos.</li>
+                <li> Selecciona una carpeta desde el menú desplegable (por ejemplo, <code>Bandeja de entrada</code>).</li>
+                <li> Visualiza los correos disponibles en la lista mostrada. </li>
+                <li> Selecciona un correo y haz clic en el botón <code>Eliminar</code> para borrarlo.</li>
+                <li> Haz clic en el botón <code>Volver</code> para regresar al menú principal del sistema.</li>
+            </ol> 
+
+            <!-- Subseccion 6 -->
+            <h2 id="solutions">Solución de problemas</h2>
+            <hr>
+            <h3>Problemas comunes y sus soluciones</h3>
+
+            <ol class="lista-ord">
+                <li><span>El correo no se elimina:</span><br>Verifica que hayas seleccionado un correo antes de hacer clic en <code>Eliminar</code>.</li>
+                <li><span>No se muestran las carpetas: </span><br>Asegúrate de que tu conexión al servidor de correo esté activa.</li>
+                <li><span>Error al regresar al menú principal:</span><br>Comprueba que la ventana principal del sistema esté configurada correctamente.</li>
+            </ol> 
+        </div>
+        <!-- Aqui termina la seccion -->
+
+        <!-- Aqui ira el pie de pagina -->
+    </body>
+</html>
