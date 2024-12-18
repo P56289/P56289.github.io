@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <!-- Aqui ira la navbar -->
+
+        <!-- Aqui comienza la seccion -->
+        <div class="seccion container">
+            <h1> Email Reception</h1>
+
+            <!-- Indice -->
+            <div id="indice" class="seccion container mb-5">
+                <h2>Index</h2>
+                <hr>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item"><a href="#description">Interface Description</a></li>
+                    <li class="list-group-item"><a href="#main">Main Functionality</a></li>
+                    <li class="list-group-item"><a href="#delete">"Delete" Button</a></li>
+                    <li class="list-group-item"><a href="#back">"Back" Button</a></li>
+                    <li class="list-group-item"><a href="#example">Usage Example</a></li>
+                    <li class="list-group-item"><a href="#solutions">Troubleshooting</a></li>
+                </ol>
+            </div>
+
+            <!-- Subseccion 1 -->
+            <h2 id="description">Interface Description</h2>
+            <hr>
+            <p>The email reception window consists of the following sections:</p>
+
+            <ol class="lista-ord">
+                <li> <span>Header:</span></li>
+                <ul>
+                    <li>Title indicating the current functionality: <code>Email Reception</code>.</li>
+                </ul>
+                  
+                <li> <span>Folder List:</span></li>
+                <ul>
+                    <li>Allows you to select different folders to filter emails.</li>
+                    <li>Includes a <code>New Folder</code> button to add a custom folder.</li>
+                </ul>
+
+                <li> <span>Email List:</span> </li>
+                <ul>
+                    <li>Displays available emails organized in the following columns:</li>
+                    <ul>
+                        <li><span>Read:</span> Indicates if the email has been read (checkbox marked).</li>
+                        <li><span>Sender:</span> Email address of the sender.</li>
+                        <li><span>Subject:</span> Title or subject of the email.</li>
+                        <li><span>Date:</span> Email reception date.</li>
+                    </ul>
+                </ul>
+                
+                <li> <span>Action Buttons</span> </li>
+                <ul> 
+                    <li><span>Delete:</span> Allows you to delete the selected email.</li>
+                    <li><span>Back:</span> Returns to the main system menu.</li>
+                </ul>
+            </ol>   
+
+            <!-- Subseccion 2 -->
+            <h2 id="main">Main Functionality</h2>
+            <hr>
+            <h3>Email Display</h3>
+            <ul class="lista-des">
+                <li>Emails are displayed in an ordered list in the main section.</li>
+                <li>Each email includes its read status, sender, subject, and reception date.</li>
+            </ul>
+
+            <h3>Folder Selection</h3>
+            <ul class="lista-des">
+                <li>Use the <code>Folders</code> section to select the desired folder via the dropdown menu.</li>
+            </ul>
+
+            <h3>Delete Email</h3>
+            <ul class="lista-des">
+                <li>Select an email from the list.</li>
+                <li>Click the <code>Delete</code> button to remove the selected message.</li>
+            </ul>
+
+            <h3>Return to Main Menu</h3>
+            <ul class="lista-des">
+                <li>Click the <code>Back</code> button to return to the main system window.</li>
+            </ul>
+
+            <!-- Subseccion 3 -->
+            <h2 id="delete">"Delete" Button</h2>
+            <hr>
+            <p>The <code>Delete</code> button allows you to remove the selected email from the list.</p>
+            <p><span>Steps to use this button:</span></p>
+
+            <ol class="lista-ord">
+                <li>Select the email you want to delete.</li>
+                <li>Click the <code>Delete</code> button.</li>
+                <li>In some cases, a confirmation window may appear to prevent accidental deletions.</li>
+            </ol> 
+            <p><span>Note:</span> Make sure to select an email before attempting to delete it.</p>
+
+            <!-- Subseccion 4 -->
+            <h2 id="back">"Back" Button</h2>
+            <hr>
+            <p>The <code>Back</code> button allows you to return to the main system menu.</p>
+            <p><span>When clicking this button:</span></p>
+            <ol class="lista-ord">
+                <li>The current email reception window will close.</li>
+                <li>The main window will automatically open.</li>
+            </ol> 
+
+            <!-- Subseccion 5 -->
+            <h2 id="example">Usage Example</h2>
+            <hr>
+            <p>Follow these steps for a typical use case of the email reception window:</p>
+
+            <ol class="lista-ord">
+                <li>Open the email reception window.</li>
+                <li>Select a folder from the dropdown menu (e.g., <code>Inbox</code>).</li>
+                <li>View the available emails in the displayed list.</li>
+                <li>Select an email and click the <code>Delete</code> button to remove it.</li>
+                <li>Click the <code>Back</code> button to return to the main system menu.</li>
+            </ol> 
+
+            <!-- Subseccion 6 -->
+            <h2 id="solutions">Troubleshooting</h2>
+            <hr>
+            <h3>Common Issues and Solutions</h3>
+
+            <ol class="lista-ord">
+                <li><span>The email is not deleted:</span><br>Ensure you have selected an email before clicking <code>Delete</code>.</li>
+                <li><span>Folders are not displayed:</span><br>Make sure your connection to the email server is active.</li>
+                <li><span>Error returning to the main menu:</span><br>Verify that the main system window is configured correctly.</li>
+            </ol> 
+        </div>
+        <!-- Aqui termina la seccion -->
+
+        <!-- Aqui ira el pie de pagina -->
+    </body>
+</html>
