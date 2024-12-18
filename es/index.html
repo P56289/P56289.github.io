@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Aqui ira la navbar -->
+        <nav class="navbar sticky-top navbar-primary bg-black ">
+            <div class="container">
+                <!-- Imagen y título -->
+                <a class="navbar-brand text-white d-flex align-items-center" style="height: 70px;" href="#IntroducirPaginaInicio">
+                    <img src="../img/logo.png" width="60px" class="m-3 d-inline-block align-top" alt="">
+                    <h5>Manual de Usuario</h5>
+                </a>
+
+                <!-- Botón para colapsar -->
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Contenido colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto text-center">
+                        <div class="row">
+                            <a class="nav-item nav-link text-white col-12 col-md-6" href="sistema-login.html">Sistema de login</a>
+                            <a class="nav-item nav-link text-white col-12 col-md-6" href="interfaz-telnet.html">Interfaz Telnet</a>
+                            <a class="nav-item nav-link text-white col-12 col-md-6" href="gestion-clientes.html">Gestión de clientes</a>
+                            <a class="nav-item nav-link text-white col-12 col-md-6" href="correo-electronico.html">Correo electrónico</a>
+                            <a class="nav-item nav-link text-white col-12 col-md-6" href="enviar-mensajes.html">Enviar mensajes</a>
+                            <a class="nav-item nav-link text-white col-12 col-md-6" href="recibir-correos.html">Recepción de correos electrónicos</a>
+                            <a class="nav-item nav-link text-white col-12 col-md-6" href="gestion-logs.html">Gestión de logs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenedor principal -->
+        <div class="container d-flex justify-content-center m-5">
+
+            <div class="col-md-8  ">
+                <h1>Secciones del manual</h1>
+                <div class="row row-cols-md-2 g-3 ">
+                    <div class="col">
+                        <div class="card bg-secondary bg-gradient bg-opacity-25 text-center " >
+                            <img src="../img/login.png" class="img-fluid ">
+                            <div class="card-body">
+                                <h5><a href="sistema-login.html"class="text-decoration-none text-black">Sistema Login</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary bg-gradient bg-opacity-25 text-center ">
+                            <img src="../img/interface.png" class="img-fluid ">
+                            <div class="card-body">
+                                <h5><a href="interfaz-telnet.html" class="text-decoration-none text-black">Interfaz Telnet</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary bg-gradient bg-opacity-25 text-center">
+                            <img src="../img/gestion-clientes.png" class="img-fluid ">
+                            <div class="card-body">
+                                <h5><a href="gestion-clientes.html" class="text-decoration-none text-black">Gestión de Clientes</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary bg-gradient bg-opacity-25 text-center">
+                            <img src="../img/email.png" class="img-fluid ">
+                            <div class="card-body">
+                                <h5><a href="correo-electronico.html" class="text-decoration-none text-black">Correo Electrónico</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary bg-gradient bg-opacity-25 text-center">
+                            <img src="../img/mensaje.png" class="img-fluid ">
+                            <div class="card-body">
+                                <h5><a href="enviar-mensajes.html" class="text-decoration-none text-black">Enviar Mensajes</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary bg-gradient bg-opacity-25 text-center">
+                            <img src="../img/emailnotification.png" class="img-fluid ">
+                            <div class="card-body">
+                                <h5><a href="recibir-correos.html" class="text-decoration-none text-black">Recepción de Correo Electrónico</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mx-auto">
+                        <div class="card bg-secondary bg-gradient bg-opacity-25 text-center">
+                            <img src="../img/logs.png" class="img-fluid">
+                            <div class="card-body">
+                                <h5><a href="gestion-logs.html" class="text-decoration-none text-black">Gestión de Logs</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Boton cambiar idioma -->
+        <div class="container d-flex justify-content-end fixed-bottom mb-4">  
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item list-group-item-primary  active disabled     ">
+                    <a href="../es/index.html" class="text-decoration-none text-white">ES</a>
+                </li>
+                <li class="list-group-item list-group-item-primary  ">
+                    <a href="../en/index.html" class="text-decoration-none text-black">EN</a>
+                </li>  
+            </ul>
+        </div>
+
+        <!-- Aqui ira el pie de pagina -->
+        <footer class="footer bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mt-3 d-flex flex-column align-items-center justify-content-center" style="color: rgb(210, 204, 204);">
+                        <p><b>Contacto</b><br>Responsable: nombreusuario@gmail.com<br>Portavoz: nombreusuario@gmail.com</p>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                        <a class="navbar-brand" style="height: 70px;">
+                            <img src="../img/logo.png" width="60px" class="mt-3 d-inline-block align-top" alt="">
+                        </a>
+                        <div class="mt-3" style="color: rgb(210, 204, 204)";>
+                            <p>&copy; 2024 - All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
