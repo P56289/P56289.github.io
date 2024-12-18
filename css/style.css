@@ -1,10 +1,17 @@
 /* Estilos para cada seccion */
 
+/* Efecto de hover en los enlaces de cada índice */
+div#indice>ol>li:hover
+{
+    background:rgba(230, 230, 230);
+}
+
 /* Titulo de la seccion */
 div.seccion>h1
 {
     font-size:50px;
     text-align:center;
+    margin-top:30px;
     margin-bottom:30px;
 }
 
@@ -36,3 +43,12 @@ div>* span
 {
     font-weight: bold;
 }
+
+/* Tablas */
+div.seccion>div.tabla
+{
+    background:red;
+    width:50%;
+    margin: 0 auto;
+}
+
