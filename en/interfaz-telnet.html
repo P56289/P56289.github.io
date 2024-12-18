@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <!-- Aqui ira la navbar -->
+
+        <!-- Aqui comienza la seccion -->
+        <div class="seccion container">
+
+            <!-- Índice -->
+            <div id="indice" class="seccion container mb-5">
+                <h2>Index</h2>
+                <hr>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item"><a href="#introduccion">Introduction</a></li>
+                    <li class="list-group-item"><a href="#descrip">Description of the Interface</a></li>
+                    <li class="list-group-item"><a href="#login">Start Telnet Connection</a></li>
+                    <li class="list-group-item"><a href="#error">Error Messages</a></li>
+                    <li class="list-group-item"><a href="#boton"> Back Button</a></li>
+                    <li class="list-group-item"><a href="#ejemplo">Example of Use</a></li>
+                </ol>
+            </div>
+
+            <!-- Subseccion 1 -->
+            <h2 id="introduccion">Introduction</h2>
+            <hr>
+            <p>This manual describes the operation of the Telnet interface designed to connect to a server using a specified IP address and port.  </p>
+            <p>The interface allows you to make a Telnet connection and return to the main program menu if necessary.  </p>
+            <p>With this guide, you will be able to use the Telnet interface effectively and solve common problems during the connection process.  </p>
+
+            <!-- Subseccion 2 -->
+            <h2 id="descrip">Description of the Interface</h2>
+            <hr>
+            <p>The Telnet interface configuration window consists of the following elements: </p>
+            <ol class="lista-ord">
+                <li>Field <code>IP Address 1</code>: Allows you to enter the IP address of the server you wish to connect to.</li>
+                <li><code>Port</code> field: Allows you to enter the port used for the connection.</li>
+                <li><code>Connect</code> button: Starts the Telnet connection process.</li>
+                <li><code>Back</code> button: Returns to the main program window.</li>
+            </ol>
+
+            <!-- Subseccion 3 -->
+            <h2 id="login">Start Telnet Connection</h2>
+            <hr>
+            <p>To start the Telnet connection, follow these steps:</p>
+             <ol class="lista-ord">
+                 <li>Enter a valid IP address in the <code>IP Address 1</code> field</li>
+                 <li>Enter the corresponding port in the <code>Port</code> field.</li>
+                 <li>Click the <code>Connect</code> button.</li>
+                <li>f the connection is successful, a new Telnet window will open.                </li>
+                <li>If an error occurs, a message will be displayed indicating the reason for the problem.</li>
+             </ol>
+
+             <!-- Subseccion 4 -->
+             <h2 id="error">Error Messages</h2>
+             <hr>
+             <p>During the connection process, error messages may appear. The following are some common messages and their description: </p>
+             <ul class="lista-des">
+                 <li><q>Please enter a valid IP address and port.</q><br>This message appears when the IP address or port fields contain incorrect or empty values.</li>
+                 <li><q>Error connecting: {message}</q><br>This message appears when the connection to the specified server cannot be established. Verify the IP address and port and try again.</li>
+             </ul>
+
+              <!-- Subseccion 5 -->
+            <h2 id="boton">Back Button</h2>
+            <hr>
+            <p>The <code>Back</code> button allows you to return to the main menu of the program.</p>
+
+            <!-- Subseccion 6 -->
+            <h2 id="ejemplo">Example of Use</h2>
+            <hr>
+            <p>The following is a practical example of how to use the Telnet interface:</p>
+            <ol class="lista-ord">
+                <li>Open the Telnet configuration window.</li>
+                <li>Enter the IP address: <code>192.168.1.10</code>.</li>
+                <li>Enter the port: <code>23</code>.</li>
+                <li>Click the <code>Connect</code> button.   </li>
+                <li>If the connection is successful, the Telnet window will open.</li>
+                <li>To return to the main menu, click the <code>Back</code> button.</li>
+            </ol>
+
+        </div>
+        <!-- Aqui termina la seccion -->
+
+        <!-- Aqui ira el pie de pagina -->
+    </body>
+</html>
