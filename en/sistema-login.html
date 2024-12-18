@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html lang="">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/seccion.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <!-- Aqui ira la navbar -->
+
+        <!-- Aqui comienza la seccion -->
+        <div class="seccion container">
+            <h1>Login System</h1>
+
+            <!-- Indice -->
+            <div id="indice" class="seccion container">
+                <h2>Index</h2>
+                <hr>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item"><a href="#introduccion">Introduction</a></li>
+                    <li class="list-group-item"><a href="#interfaz-login">Login interface</a></li>
+                    <li class="list-group-item"><a href="#instrucciones-usuario">User instructions</a></li>
+                    <li class="list-group-item"><a href="#manejo-errores">Error handling</a></li>
+                    <li class="list-group-item"><a href="#recomendaciones">Recommendations</a></li>
+                    <li class="list-group-item"><a href="#ejemplo-inicio-sesion">Example login</a></li>
+                    <li class="list-group-item"><a href="#notas">Additional notes</a></li>
+                </ol>
+            </div>
+
+            <!-- Introduccion -->
+            <h2 id="introduccion">Introduction</h2><hr>
+            <p>The login system is designed to ensure that only authorized users can access the application. This manual details how to use the login interface, as well as possible actions in case of errors.</p>
+
+            <!-- Interfaz login -->
+            <h2 id="interfaz-login">Login interface</h2><hr>
+            <p>The login window includes the following elements:</p>
+            <ul>
+                <li>User field: Allows you to enter the registered user name.</li>
+                <li>Password field: Allows you to enter the password corresponding to the user.</li>
+                <li><code>Login</code> button: Starts the credentials validation process.</li>
+                <li>Error message: Appears in red if the credentials entered are incorrect.</li>
+            </ul>
+
+            <!-- Instrucciones para el usuario -->
+            <h2 id="instrucciones-usuario">User instructions</h2><hr>
+            <h3>How to log in</h3>
+            <p>To log in, the user must follow the instructions below.</p>
+            <ol>
+                <li>Open the app.</li>
+                <li>In the <code>Username</code> field, enter your username.</li>
+                <li>In the <code>Password</code> field, enter your password.</li>
+                <li>Click the <code>Login</code> button.</li>
+            </ol>
+            <p>If the credentials are correct, a success message will appear and you will access the next screen of the application.</p>
+            <p>But if they are incorrect, a red error message will be displayed stating <q>Incorrect credentials, please try again.</q></p>
+
+            <h3>Maximum number of failed attempts</h3>
+            <p>The system allows a maximum of 5 login attempts. If this limit is reached:</p>
+            <ul>
+                <li>A pop-up message will appear stating <q>Too many failed attempts. The application will close.</q></li>
+                <li>The application will automatically close to protect security.</li>
+            </ul>
+
+            <!-- Manejo de errores -->
+            <h2 id="manejo-errores">Error handling</h2><hr>
+            <h3>Incorrect credentials</h3>
+            <p>The message <q>Incorrect credentials, please try again</q> indicates that the credentials you entered do not match any registered users. Please verify your username and password.</p>
+            <h3>Too many attempts</h3>
+            <p>If you enter incorrect credentials 5 times in a row, the system will block access and the application will close.</p>
+
+            <!-- Recomendaciones -->
+            <h2 id="recomendaciones">Recommendations</h2><hr>
+            <ul>
+                <li>Strong Passwords: Make sure you use a strong password that combines uppercase and lowercase letters, numbers, and special characters.</li>
+                <li>Password Recovery: If you do not remember your credentials, contact your system administrator to reset them.</li>
+                <li>Safe shutdown: To close the login window without attempting to log in, use standard operating system functions to close the application.</li>
+            </ul>
+
+            <!-- Ejemplo inicio sesion -->
+            <h2 id="ejemplo-inicio-sesion">Example login</h2><hr>
+            <h3>Successful login</h3>
+            <ol>
+                <li>The user enters his/her credentials.<br><code>Username: 'admin'<br>Password: 'password123'</code></li>
+                <li>The system validates the credentials and displays <q>Login successful</q>.</li>
+                <li>The main system window opens.</li>
+            </ol>
+
+            <h3>Faild login</h3>
+            <ol>
+                <li>The user enters his/her credentials.<code><br>Username: 'admin'<br>Password: 'incorrect'</code></li>
+                <li>The system detects that the credentials are incorrect and displays <q>Incorrect credentials, please try again</q>.</li>
+                <li>If this happens 5 times in a row, the application closes automatically.</li>
+            </ol>
+
+            <!-- Notas adicionales -->
+            <h2 id="notas">Additional notes</h2><hr>
+            <ul>
+                <li>Privacy: The password is not visible while typing, as the field is protected with a masked input format.</li>
+                <li>Security: All passwords are securely verified using a validation system (they are not stored in plain text).</li>
+                <li>Close protection: If the app closes due to too many failed attempts, you will need to restart to try again.</li>
+            </ul>
+        </div>
+        <!-- Aqui termina la seccion -->
+
+        <!-- Aqui ira el pie de pagina -->
+    </body>
+</html>
