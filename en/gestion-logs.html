@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html lang="">
+
+<head>
+    <link rel="stylesheet" href="../css/seccion.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Aqui ira la navbar -->
+
+    <!-- Aqui comienza la seccion -->
+    <div class="seccion container">
+        <!-- Índice -->
+        <h1>Log Management</h1>
+        <div id="indice" class="seccion container mb-5">
+            <h2>Index</h2>
+            <hr>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><a href="#introduccion">Introduction</a></li>
+                <li class="list-group-item"><a href="#interfaz-gestion">Log Management Interface</a></li>
+                <li class="list-group-item"><a href="#flujo-uso">Usage Flow</a></li>
+                <li class="list-group-item"><a href="#detalles-tecnicos">Technical Details</a></li>
+                <li class="list-group-item"><a href="#errores-soluciones">Common Errors and Solutions</a></li>
+                <li class="list-group-item"><a href="#recomendaciones">Recommendations</a></li>
+            </ol>
+        </div>
+
+        <!-- Introduccion -->
+        <h2 id="introduccion">Introduction</h2>
+        <hr>
+        <p>The log management functionality allows users to view, filter, and generate reports on system activities.
+            This tool is essential for tracking actions, conducting audits, and maintaining a history of events.
+
+        </p>
+
+        <!-- Interfaz de gestion de logs -->
+        <h2 id="interfaz-gestion">Log Management Interface</h2>
+        <hr>
+        <p>The Log Management window contains the following main elements:
+        </p>
+        <h3>Interface Elements</h3>
+        <ol type="1" class="lista-ord">
+            <li>Filter Combobox</li>
+            <ul class="lista-des">
+                <li><code>User:</code> Filters logs by a specific user.</li>
+                <li><code>Log:</code> Filters by a specific type of recorded action.</li>
+                <li><code>Date:</code> Filters logs by a specific date.</li>
+            </ul>
+            <li>Log Table:</li>
+            <ul class="lista-des">
+                <li> Displays activity records in a table format with the following columns:</li>
+                <ul class="lista-des">
+                    <li><code>User:</code> The name of the user who pemformed the action.</li>
+                    <li><code>Date:</code> The date and time of the event.</li>
+                    <li><code>Action:</code> A description of the recorded activity.</li>
+                </ul>
+            </ul>
+            <li>Action Buttons:</li>
+            <ul class="lista-des">
+                <li><code>Create file:</code> Generates a file with the current records for export or saving.
+                </li>
+                <li><code>Update data:</code> Reloads the log table with the most recent data.</li>
+            </ul>
+            <li>Title:</li>
+            <ul class="lista-des">
+                <li>A header indicating that you are in the Log Management section.</li>
+            </ul>
+        </ol>
+
+        <!-- Flujo de uso -->
+        <h2 id="flujo-uso">Usage Flow</h2>
+        <hr>
+
+        <h3>Viewing Logs</h3>
+        <p>When the window opens, the log table displays recent activity records.</p>
+        <p>The table includes details such as the user's name, the action date, and a brief event description.</p>
+
+
+        <h3>Filtering Logs</h3>
+        <p>You can use the dropdown filters to narrow the displayed logs:
+        </p>
+        <ul class="lista-des">
+            <li>By User: Select a username from the first dropdown to view only actions performed by that user.
+            </li>
+            <li>By Log Type: Use the second dropdown to filter by a specific type of action (e.g., Login or User
+                Creation).
+            </li>
+            <li>By Date: Filter the records by selecting a date in the third dropdown.
+            </li>
+        </ul>
+
+        <h3>Creating a File</h3>
+        <ol class="lista-ord">
+            <li>Clic the <code>Create file</code> button.</li>
+            <li>A file containing the currently visible record in the table wil be generated.</li>
+            <li>This file can be used as a backup or to share the event history.</li>
+        </ol>
+
+        <h3>Refresing Data</h3>
+        <ol class="lista-ord">
+            <li>Click the <code>Update data</code> button to reload the logs in the table.</li>
+            <li>This action is useful if new activities have been recorded in the system while you are using the window.
+            </li>
+        </ol>
+
+        <!-- Detalles técnicos -->
+        <h2 id="detalles-tecnicos">Technical Details</h2>
+        <hr>
+        <h3>Sample Data</h3>
+        <p>When opening the log management section, the table will load the following example records:</p>
+
+        <table>
+            <tr>
+                <th>User</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>1 day ago</td>
+                <td>Login</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>Today</td>
+                <td>User creation</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>5 days ago</td>
+                <td>Data deletion</td>
+            </tr>
+        </table>
+
+        <!-- Errores comunes y soluciones -->
+        <h2 id="errores-soluciones">Common Errors and Solutions</h2>
+        <hr>
+
+        <h3>Filters do not show results:</h3>
+        <ul class="lista-des">
+            <li><b>Cause:</b> Filters are configured but lack logic to modify the table data.</li>
+            <li><b>Solution:</b> This behavior will be improved in future updates</li>
+        </ul>
+
+
+        <h3>File is not generated when clicking "Create file" button:</h3>
+        <ul class="lista-des">
+            <li><b>Cause:</b> The method associated with the button does not yet include file generation logic.</li>
+            <li><b>Solution:</b> Contact the developer to implement this functionality.
+            </li>
+        </ul>
+
+
+        <!-- Recomendaciones -->
+        <h2 id="recomendaciones">Recommendations</h2>
+        <hr>
+        <ul class="lista-des">
+            <li>Use the filters to narrow the range of records and simplify analysis.</li>
+            <li>Refresh the data before generating a file to ensure the most recent records are included.
+            </li>
+        </ul>
+    </div>
+    <!-- Aqui termina la seccion -->
+
+    <!-- Aqui ira el pie de pagina -->
+</body>
+
+</html>
