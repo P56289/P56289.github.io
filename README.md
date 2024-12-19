@@ -25,20 +25,28 @@ La estructura de la pagina web es la siguiente:
 ```
 .
 ├── css
+│   ├── seccion.css
 │   └── style.css
-├── es
-│   ├── index.html
-│   ├── correo-electronico.html
-│   ├── enviar-mensajes.html
-│   └── ...
 ├── en
 │   ├── index.html
 │   ├── correo-electronico.html
 │   ├── enviar-mensajes.html
 │   └── ...
-└── img
-    ├── logo.png
-    └── ...
+├── es
+│   ├── index.html
+│   ├── correo-electronico.html
+│   ├── enviar-mensajes.html
+│   └── ...
+├── img
+│   ├── contraseña-de-aplicacion.png
+│   ├── creacion-contraseña-dos.png
+│   └── ...
+├── docs
+│   ├── manual_usuario_español.pdf
+│   └── manual_usuario_ingles.pdf
+├── favicon.ico
+├── index.html
+└── README.md
 ```
 
 En la carpeta `es` se almacenan todas las páginas y secciones escritas en
